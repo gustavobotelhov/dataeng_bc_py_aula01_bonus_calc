@@ -16,14 +16,14 @@ valor_do_bonus = CONSTANTE_BONUS + salario_usuario * bonus_usuario
 
 # 6) Imprime a mensagem personalizada incluindo o nome do usuário, salário e bônus
 
-print(f"O usuário {nome_usuario} possui o bonus de {valor_do_bonus}")
 # usar o f no print permite colocar texto e variáveis juntos
+print(f"O usuário {nome_usuario} possui o bonus de {valor_do_bonus}")
+
 
 # Bônus: Quantos bugs e riscos você consegue identificar nesse programa?
 
-# Ausência de Validação de Entrada
-# 1° O código assume que o usuário sempre insere valores numéricos válidos para o salário e o bônus, o que pode resultar em erros caso o usuário digite algo 
-# incorreto (como letras ou símbolos). Isso pode ser mitigado com um bloco try/except para tratar exceções como ValueError.
+# 1° Ausência de Validação de Entrada: O código assume que o usuário sempre insere valores numéricos válidos para o salário e o bônus, 
+# o que pode resultar em erros caso o usuário digite algo incorreto (como letras ou símbolos). Isso pode ser mitigado com um bloco try/except para tratar exceções como ValueError.
 # 2° Falta de Validação para Bônus ou Salário Negativo.
 # 3° Possível ZeroDivisionError ao usar o valor do bônus como multiplicador.
 # 4° Formatação de Números no Print:
